@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Catify</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </nav>
+
+            <img src="img.png" id="img" class="song-img">
+            <h1 id="title">Melody</h1>
+            <p id="artist">Kevu</p>
+            <input type="range" value="0" id="progress">
+            <audio id="song"></audio>
+            <div class="volumeBlock">
+                <i class="fa-solid fa-volume-low fa-2x" id="volIcon"></i>
+                <input type="range" value="50" min="0" max="100" id="volume">
+            </div>
+            <div class="controls">
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div><i class="fa-solid fa-play" id="ctrlIcon" onclick="playPause()"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
